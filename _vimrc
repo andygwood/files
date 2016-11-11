@@ -75,8 +75,8 @@ set shiftround                                                                 "
 autocmd BufNewFile,BufRead Makefile setlocal noexpandtab
 
 "" Where you are
+set nornu
 set number                                                                     "Precede each line with its line number
-set relativenumber                                                             "Show the line number relative to the line with the cursor in front of each line
 set ruler                                                                      "Always show current position along the bottom
 set cursorline                                                                 "Highlight the screen line of the cursor
 
@@ -130,6 +130,7 @@ Plugin 'vim-easy-align'
 Plugin 'bclose.vim'
 Plugin 'typescript-vim'
 Plugin 'vim-js-indent'
+Plugin 'colorschemes'
 "https://github.com/Shougo/unite-outline.git
 
 call vundle#end()
@@ -141,7 +142,7 @@ syntax on
 
 set background=dark
 
-colorscheme peaksea
+colorscheme wellsokai
 
 highlight clear SignColumn
 
