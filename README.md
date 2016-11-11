@@ -4,11 +4,11 @@ Install
     $ cd ~
     $ git clone [repo]
     $ git submodule update --init
-    $ ln -sf ~/Projects/.files2/_bash_profile .bash_profile
-    $ ln -sf ~/Projects/.files2/_bashrc .bashrc
+    $ ln -sf ~/Projects/.files2/_bash_profile ~/.bash_profile
+    $ ln -sf ~/Projects/.files2/_bashrc ~/.bashrc
     $ touch ~/.bashrc.local
-    $ ln -sf ~/Projects/.files2/_tmux.conf .tmux.conf
-    $ ln -sf ~/Projects/.files2/_vimrc .vimrc
+    $ ln -sf ~/Projects/.files2/_tmux.conf ~/.tmux.conf
+    $ ln -sf ~/Projects/.files2/_vimrc ~/.vimrc
     $ touch ~/.vim.local
     $ cp ~/Projects/.files2/_gitconfig.dist .gitconfig
     $ git config --global user.name [your name]

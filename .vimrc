@@ -1,1 +1,1 @@
-.files2/_vimrc
+/home/wood/Projects/.files2/_vimrc

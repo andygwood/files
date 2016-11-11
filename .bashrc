@@ -1,1 +1,1 @@
-.files2/_bashrc
+/home/wood/Projects/.files2/_bashrc
