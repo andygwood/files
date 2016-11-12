@@ -6,6 +6,7 @@ Install
     $ git submodule update --init
     $ echo "" >> ~/.bash_profile && echo "source ~/.bash_profile.local" >> ~/.bash_profile
     $ ln -sf ~/Projects/files/_bash_profile ~/.bash_profile.local
+    $ source ~/.bash_profile
     $ ln -sf ~/Projects/files/_tmux.conf ~/.tmux.conf
     $ ln -sf ~/Projects/files/_vimrc ~/.vimrc
     $ touch ~/.vim.local
