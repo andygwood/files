@@ -1,4 +1,10 @@
 export TERM='screen-256color'
+export VISUAL=vim
+export EDITOR="$VISUAL"
+
+# Override PS1 to provide git repo info
+source /usr/local/share/git-core/contrib/completion/git-prompt.sh
+export PS1='\[\e[01;30m\]\u@\h\[\e[00m\]:\[\e[00;36m\]\w\[\e[00m\]$(__git_ps1 " (%s)")\$ ' # nice prompt
 
 #
 # Aliases
@@ -10,3 +16,18 @@ alias la='ll -A'                                                               #
 alias vi='vim'                                                                 # You never want to use vi
 
 alias g='git'                                                                  # because I'm always type "gti"
+alias gl='git log --oneline --abbrev-commit --all --graph --decorate --color'
+alias gld='git log --decorate'
+
+showGitFilesChangedBetweenBranches() {
+
+    if [ "$#" -ne 2 ]
+    then
+        echo "This function requires 2 arguments: gdf [branch_with_changes] [branch_to_compare_against]"
+        return
+    fi
+
+    git diff --name-only $1 $(git merge-base $1 $2)
+}
+
+alias gdf=showGitFilesChangedBetweenBranches
