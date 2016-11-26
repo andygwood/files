@@ -48,7 +48,7 @@ let g:airline#extensions#tabline#enabled=1
 let g:airline_powerline_fonts=1
 
 "" NERDTree
-autocmd vimenter * NERDTree                               "Open NERDTree on vim start
+"" autocmd vimenter * NERDTree                               "Open NERDTree on vim start
 map <leader>n :NERDTreeToggle<CR>
 
 function! NERDTreeHighlightFile(extension, fg, bg, guifg, guibg)
