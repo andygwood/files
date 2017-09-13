@@ -36,3 +36,11 @@ hi LineNr         ctermfg=darkgrey guifg=#666666 guibg=#000000
 set listchars=nbsp:*,tab:>-,trail:~,extends:>,precedes:<
 set list
 :nnoremap <silent> <F5> :let _s=@/ <Bar> :%s/\s\+$//e <Bar> :let @/=_s <Bar> :nohl <Bar> :unlet _s <CR>
+
+set autoindent                                                                 "Copy indent from current line when starting a new line
+set smartindent                                                                "Do smart autoindenting when starting a new line
+set expandtab                                                                  "Use the appropriate number of spaces to insert a <Tab>
+set tabstop=4                                                                  "Number of spaces that a <Tab> in the file counts for
+set shiftwidth=4                                                               "Indent size
+set softtabstop=4                                                              "Number of spaces that a <Tab> counts for while performing editing operations
+set shiftround                                                                 "Round indent to multiple of 'shiftwidth'
