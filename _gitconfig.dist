@@ -1,8 +1,0 @@
-[user]
-    name =
-    email =
-[github]
-    user =
-    token =
-[include]
-    path = ~/.files2/git/_gitconfig
