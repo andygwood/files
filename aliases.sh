@@ -33,5 +33,7 @@ alias vi='vim'                                                                 #
 
 alias g='git'                                                                  # because I'm always type "gti"
 alias gp='g pull origin $1'
+alias gpp='g push'
+alias gc='g commit'
 alias gl='git log --oneline --abbrev-commit --all --graph --decorate --color'
 alias gld='git log --decorate'
