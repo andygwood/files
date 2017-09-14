@@ -44,6 +44,10 @@ map <Tab> :bn<cr>
 map <S-Tab> :bp<cr>
 map <C-w> :bd<cr>
 
+"" natural window splitting
+set splitbelow
+set splitright
+
 "" NERDTREE
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
