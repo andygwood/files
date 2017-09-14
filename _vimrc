@@ -12,7 +12,7 @@ call plug#begin('~/.vim/plugged')
 call plug#end()
 
 "" COLORS
-colorscheme elflord
+colorscheme wellsokai
 hi CursorLine     guibg=#222222 gui=none
 hi LineNr         ctermfg=darkgrey guifg=#666666 guibg=#000000
 
@@ -61,6 +61,8 @@ nmap <C-a> :NERDTreeToggle<CR>
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlPLastMode'
 let g:ctrlp_extensions = ['buffertag', 'tag', 'line', 'dir']
+""let g:ctrlp_user_command = 'find %s -type f'
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/node_modules/*,*vendor/*,*.idea/*
 
 "" VIM AIRLINE
 let g:airline#extensions#tabline#enabled = 1
@@ -68,5 +70,5 @@ let g:airline#extensions#tabline#left_sep = ' '
 let g:airline#extensions#tabline#left_alt_sep = '|'
 
 "" REMOVE ME?
-:nnoremap <silent> <F5> :let _s=@/ <Bar> :%s/\s\+$//e <Bar> :let @/=_s <Bar> :nohl <Bar> :unlet _s <CR>
+"":nnoremap <silent> <F5> :let _s=@/ <Bar> :%s/\s\+$//e <Bar> :let @/=_s <Bar> :nohl <Bar> :unlet _s <CR>
 ""set runtimepath^=~/.vim/bundle/ctrlp.vim
