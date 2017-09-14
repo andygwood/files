@@ -36,6 +36,9 @@ set shiftwidth=4                                                               "
 set softtabstop=4                                                              "Number of spaces that a <Tab> counts for while performing editing operations
 set shiftround                                                                 "Round indent to multiple of 'shiftwidth'
 
+"" goto top of line number
+nnoremap <nowait> gg ggzt
+
 "" buffer switching
 map <Tab> :bn<cr>
 map <S-Tab> :bp<cr>
