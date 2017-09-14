@@ -42,7 +42,7 @@ nnoremap <nowait> gg ggzt
 "" buffer switching
 map <Tab> :bn<cr>
 map <S-Tab> :bp<cr>
-map gd :bd<cr>
+map <C-w> :bd<cr>
 
 "" NERDTREE
 autocmd StdinReadPre * let s:std_in=1
