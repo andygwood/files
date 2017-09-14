@@ -36,7 +36,9 @@ alias dc='docker-compose'
 alias ls='ls -GhlF -A'                                                               # same that above + every files
 alias vi='vim'                                                                 # You never want to use vi
 
-alias g='git'                                                                  # because I'm always type "gti"
+alias g='git'
+alias gd='g diff'
+alias grm='g rebase origin/master'
 alias ga='g add'
 alias gs='g status'
 alias gp=getBranchName
