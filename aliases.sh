@@ -32,6 +32,8 @@ alias ls='ll -A'                                                               #
 alias vi='vim'                                                                 # You never want to use vi
 
 alias g='git'                                                                  # because I'm always type "gti"
+alias ga='g add'
+alias gs='g status'
 alias gp='g pull origin $1'
 alias gpp='g push'
 alias gc='g commit'
