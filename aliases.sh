@@ -33,7 +33,7 @@ alias gdt=gitDiffTree
 alias gdf=showGitFilesChangedBetweenBranches
 
 alias dc='docker-compose'
-alias ls='ls -la'                                                               # same that above + every files
+alias ls='ls -GhlF -A'                                                               # same that above + every files
 alias vi='vim'                                                                 # You never want to use vi
 
 alias g='git'                                                                  # because I'm always type "gti"

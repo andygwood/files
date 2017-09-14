@@ -61,8 +61,10 @@ nmap <C-a> :NERDTreeToggle<CR>
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlPLastMode'
 let g:ctrlp_extensions = ['buffertag', 'tag', 'line', 'dir']
-""let g:ctrlp_user_command = 'find %s -type f'
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/node_modules/*,*vendor/*,*.idea/*
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*node_modules/*,*.idea/*,*vendor/*
+let g:ctrlp_by_filename = 1
+"let g:ctrlp_cmd = 'CtrlPMixed'
+let g:ctrlp_match_window = 'bottom,order:btt,min:1,max:25,results:25'
 
 "" VIM AIRLINE
 let g:airline#extensions#tabline#enabled = 1
