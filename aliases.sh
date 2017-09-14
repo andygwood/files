@@ -25,16 +25,16 @@ alias gdt=gitDiffTree
 alias gdf=showGitFilesChangedBetweenBranches
 
 alias dc='docker-compose'
-
-alias ll='ls -GhlF'                                                            # Color + Human readable + long + metadata
 alias ls='ll -A'                                                               # same that above + every files
-
 alias vi='vim'                                                                 # You never want to use vi
 
+branch_name="$(git symbolic-ref HEAD 2>/dev/null)" ||
+branch_name="(unnamed branch)"     # detached HEAD
+branch_name=${branch_name##refs/heads/}
 alias g='git'                                                                  # because I'm always type "gti"
 alias ga='g add'
 alias gs='g status'
-alias gp='g pull origin $1'
+alias gp='g pull origin $branch_name'
 alias gpp='g push'
 alias gc='g commit'
 alias gl='git log --oneline --abbrev-commit --all --graph --decorate --color'
