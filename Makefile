@@ -4,4 +4,5 @@ init:
 
 build:
 	ln -sf ~/Projects/files/_tmux.conf ~/.tmux.conf
-	ln -sf ~/Projects/files/_vimrc ~/.vimrc
+	ln -sf ~/Projects/files/_bash_profile.local ~/.bash_profile.local
+	source ~/.bash_profile
