@@ -20,6 +20,11 @@ showGitFilesChangedBetweenBranches() {
     git diff --name-only $1 $(git merge-base $1 $2)
 }
 
+gitCleanupBranch() {
+    git branch -D $1
+    git push origin :$1
+}
+
 function getBranchName() {
 
     branch_name="$(git symbolic-ref HEAD 2>/dev/null)" ||
@@ -27,6 +32,13 @@ function getBranchName() {
     branch_name=${branch_name##refs/heads/}
     git pull origin $(echo $branch_name)
 }
+
+function phpcs() {
+
+    ~/dev/karon/bin/phpcs --runtime-set ignore_errors_on_exit true --runtime-set ignore_warnings_on_exit true --standard=../../karon/config/phpcs.xml --ignore=*.js --colors $1
+}
+
+alias phpcs=phpcs
 
 alias sql=connectToSql
 alias gdt=gitDiffTree
@@ -46,3 +58,4 @@ alias gpp='g push'
 alias gc='g commit'
 alias gl='git log --oneline --abbrev-commit --all --graph --decorate --color'
 alias gld='git log --decorate'
+alias gcb=gitCleanupBranch
