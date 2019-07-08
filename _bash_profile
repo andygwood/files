@@ -1,3 +1,5 @@
+stamp() { while read; do printf '[%(%F %T)T] %s\n' -1 "$REPLY"; done; }
+
 export COMPOSER_CAFILE="/usr/local/etc/ssl/cert.pem"
 export CURL_CA_BUNDLE="/usr/local/etc/ssl/cert.pem"
 
@@ -5,6 +7,7 @@ export CURL_CA_BUNDLE="/usr/local/etc/ssl/cert.pem"
 
 export PATH=$PATH:$HOME/.composer/vendor/bin:$HOME/npm_modules/bin
 export PHANTOMJS_BIN=phantomjs
+export NODE_PATH="~/npm_modules/lib/node_modules/"
 
 #export TERM='screen-256color'
 export TERM='xterm-256color'
@@ -13,7 +16,8 @@ export EDITOR="$VISUAL"
 
 # Override PS1 to provide git repo info
 source /usr/local/share/git-core/contrib/completion/git-prompt.sh
-#source /usr/local/git/contrib/completion/git-completion.bash
+source /usr/local/share/git-core/contrib/completion/git-completion.bash
+
 export PS1='\[\e[01;30m\]\u@\h\[\e[00m\]:\[\e[00;36m\]\w\[\e[00m\]$(__git_ps1 " (%s)")\$ ' # nice prompt
 
 source ~/Projects/files/aliases.sh
@@ -21,3 +25,6 @@ source ~/Projects/files/aliases.sh
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+export EP_NAMESPACE="agw"
+export EP_NAMESPACE_AS_SUBDOMAIN="true"
+export PATH=$PATH:~/npm_modules/bin

@@ -38,6 +38,43 @@ function phpcs() {
     ~/dev/karon/bin/phpcs --runtime-set ignore_errors_on_exit true --runtime-set ignore_warnings_on_exit true --standard=../../karon/config/phpcs.xml --ignore=*.js --colors $1
 }
 
+function applicationManagerBranchReplace() {
+
+    if [ "$#" -ne 2 ]
+    then
+        echo 'Usage: amr ${project} ${branch}'
+        return
+    fi
+
+    project=$1
+    branch=$2
+
+    cd ~/application-manager/
+    git checkout master
+    git pull
+    git checkout -b "${branch}"
+    sed -i '' "s/branch:.*/branch: ${branch}/g" "playbooks/${project}.yml"
+    git add "playbooks/${project}.yml"
+    git commit -m "added ${project} branch: ${branch}"
+    git diff origin/master HEAD
+}
+
+function checkDiffBeforeBranchDelete() {
+    git checkout $1
+    git rebase origin/master
+    git diff origin/master
+    git checkout master
+}
+
+function makeTechtest() {
+    cd ~/dev/ei-js/aware-techtest-app && make build
+    cd ~/eiaware && make js && make css && app/console ep-assets:manifests
+}
+
+alias maketechtest=makeTechtest
+
+alias gappdiff=checkDiffBeforeBranchDelete
+
 alias phpcs=phpcs
 
 alias sql=connectToSql
@@ -59,3 +96,4 @@ alias gc='g commit'
 alias gl='git log --oneline --abbrev-commit --all --graph --decorate --color'
 alias gld='git log --decorate'
 alias gcb=gitCleanupBranch
+alias amr=applicationManagerBranchReplace
