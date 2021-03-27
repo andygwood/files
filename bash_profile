@@ -53,7 +53,7 @@ function jailSync(){
 }
 
 function sshTunnel(){
- ssh -N -L localhost:8080:localhost:8080 agwdev72.dev.experiencepoint.vpn
+ ssh -N -L localhost:8080:localhost:8080 wood@agwdev72.dev.experiencepoint.vpn
 }
 
 export TERM='xterm-256color'
@@ -61,8 +61,8 @@ export TERM='xterm-256color'
 #
 # Aliases
 #
-alias rssh='ssh agwdev54.dev.experiencepoint.vpn'
-alias rssh72='ssh agwdev72.dev.experiencepoint.vpn'
+alias rssh='ssh wood@agwdev54.dev.experiencepoint.vpn'
+alias rssh72='ssh wood@agwdev72.dev.experiencepoint.vpn'
 
 alias ll='ls -GhlF'                                                            # Color + Human readable + long + metadata
 alias la='ll -A'                                                               # same that above + every files
