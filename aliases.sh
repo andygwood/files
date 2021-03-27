@@ -97,3 +97,7 @@ alias gl='git log --oneline --abbrev-commit --all --graph --decorate --color'
 alias gld='git log --decorate'
 alias gcb=gitCleanupBranch
 alias amr=applicationManagerBranchReplace
+
+alias vi='vim'
+
+alias composer='php -d memory_limit=-1 /usr/local/bin/composer'
