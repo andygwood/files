@@ -1,7 +1,3 @@
-PATH=~/bin:~/bin/homebrew/bin:$PATH
-
-APPS="assets auth ec ei facilitator gateway eiaware eiapply ei-frontend-engine mycommitment selfserve simple techtest www timer mailq apply-nodejs"
-
 function jail(){
 
   umount -f agwdev54.dev.experiencepoint.vpn:/var/www/sites/
@@ -62,8 +58,6 @@ function sshTunnel(){
 
 export TERM='xterm-256color'
 
-source ~/.bashrc
-
 #
 # Aliases
 #
@@ -76,4 +70,4 @@ alias la='ll -A'                                                               #
 alias vi='vim'                                                                 # You never want to use vi
 alias gl='git log --oneline --abbrev-commit --all --graph --decorate --color'
 alias g='git'                                                                  # because I'm always type "gti"
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+source ./aliases.sh
