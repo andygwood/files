@@ -1,0 +1,6 @@
+root = /Users/wood/PhpstormProjects/gateway-delivery-space-front-end
+root = ssh://agwdev72.dev.experiencepoint.vpn/dev/gateway-delivery-space-front-end/
+ignore = Name cache
+ignore = Name logs
+ignore = Name .log
+ignore = Name .idea

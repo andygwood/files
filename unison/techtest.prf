@@ -1,0 +1,7 @@
+root = /Users/wood/PhpstormProjects/techtest
+root = ssh://agwdev72.dev.experiencepoint.vpn/techtest/
+ignore = Name cache
+ignore = Name logs
+ignore = Name .log
+ignore = Name build
+ignore = Name .idea

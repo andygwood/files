@@ -1,0 +1,6 @@
+root = /Users/wood/PhpstormProjects/www-wordpress
+root = ssh://agwdev72.dev.experiencepoint.vpn/dev/www-wordpress/
+ignore = Name cache
+ignore = Name logs
+ignore = Name .log
+ignore = Name .idea

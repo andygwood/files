@@ -1,0 +1,7 @@
+root = /Users/wood/PhpstormProjects/selfserve
+root = ssh://agwdev72.dev.experiencepoint.vpn/selfserve/
+ignore = Name cache
+ignore = Name logs
+ignore = Name .log
+ignore = Name build
+ignore = Name .idea
