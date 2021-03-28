@@ -1,3 +1,5 @@
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
+
 function jail(){
 
   umount -f agwdev54.dev.experiencepoint.vpn:/var/www/sites/
@@ -70,4 +72,4 @@ alias la='ll -A'                                                               #
 alias vi='vim'                                                                 # You never want to use vi
 alias gl='git log --oneline --abbrev-commit --all --graph --decorate --color'
 alias g='git'                                                                  # because I'm always type "gti"
-source ./aliases.sh
+source ${DIR}/aliases.sh
