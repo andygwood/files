@@ -1,0 +1,6 @@
+root = /Users/andreww/PhpstormProjects/karon
+root = ssh://wood@agwdev72.dev.experiencepoint.vpn/dev/karon/
+ignore = Name cache
+ignore = Name logs
+ignore = Name .log
+ignore = Name .idea

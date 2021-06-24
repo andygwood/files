@@ -1,0 +1,6 @@
+root = /Users/andreww/PhpstormProjects/playbook
+root = ssh://wood@agwdev72.dev.experiencepoint.vpn/dev/playbook/
+ignore = Name cache
+ignore = Name logs
+ignore = Name .log
+ignore = Name .idea

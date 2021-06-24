@@ -1,3 +1,5 @@
+export PATH="$PATH:$HOME/.composer/vendor/bin"
+
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 
 function jail(){
@@ -73,3 +75,4 @@ alias vi='vim'                                                                 #
 alias gl='git log --oneline --abbrev-commit --all --graph --decorate --color'
 alias g='git'                                                                  # because I'm always type "gti"
 source ${DIR}/aliases.sh
+alias composer='~/.brew/sbin/composer'

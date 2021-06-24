@@ -1,3 +1,10 @@
-Host agw54
+Host wood54
     HostName agwdev54.dev.experiencepoint.vpn
     User wood
+Host wood72
+    HostName agwdev72.dev.experiencepoint.vpn
+    User wood
+host 52.228.0.186 wpwww
+  User experiencepoint
+  Hostname 52.228.0.186
+  Port 22

@@ -1,5 +1,5 @@
-root = /Users/wood/PhpstormProjects/selfserve
-root = ssh://agwdev72.dev.experiencepoint.vpn/selfserve/
+root = /Users/andreww/PhpstormProjects/selfserve
+root = ssh://wood@agwdev72.dev.experiencepoint.vpn/selfserve/
 ignore = Name cache
 ignore = Name logs
 ignore = Name .log

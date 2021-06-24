@@ -1,5 +1,5 @@
-root = /Users/wood/PhpstormProjects/gateway-php7
-root = ssh://agwdev72.dev.experiencepoint.vpn/gateway/
+root = /Users/andreww/PhpstormProjects/gateway
+root = ssh://wood@agwdev72.dev.experiencepoint.vpn/gateway/
 ignore = Name cache
 ignore = Name logs
 ignore = Name .log

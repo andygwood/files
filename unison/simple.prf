@@ -1,5 +1,5 @@
-root = /Users/wood/PhpstormProjects/simple
-root = ssh://agwdev72.dev.experiencepoint.vpn/simple/
+root = /Users/andreww/PhpstormProjects/simple
+root = ssh://wood@agwdev72.dev.experiencepoint.vpn/simple/
 ignore = Name cache
 ignore = Name logs
 ignore = Name .log
