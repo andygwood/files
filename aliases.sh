@@ -1,6 +1,13 @@
 #
 # Aliases
 #
+
+configureSSHKeys() {
+    eval "$(ssh-agent -s)"
+    ssh-add -k ~/.ssh/id_ed25519
+    ssh-add -k ~/.ssh/id_rsa
+}
+
 connectToSql() {
     psql -hsql -U postgres
 }
@@ -70,6 +77,8 @@ function makeTechtest() {
     cd ~/dev/ei-js/aware-techtest-app && make build
     cd ~/eiaware && make js && make css && app/console ep-assets:manifests
 }
+
+alias sshpswd=configureSSHKeys
 
 alias maketechtest=makeTechtest
 
