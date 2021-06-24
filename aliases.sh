@@ -78,7 +78,7 @@ function makeTechtest() {
     cd ~/eiaware && make js && make css && app/console ep-assets:manifests
 }
 
-alias sshpswd=configureSSHKeys
+alias sshp=configureSSHKeys
 
 alias maketechtest=makeTechtest
 
