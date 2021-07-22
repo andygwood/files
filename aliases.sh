@@ -4,8 +4,7 @@
 
 configureSSHKeys() {
     eval "$(ssh-agent -s)"
-    ssh-add -k ~/.ssh/id_ed25519
-    ssh-add -k ~/.ssh/id_rsa
+    ssh-add
 }
 
 connectToSql() {
@@ -108,4 +107,4 @@ alias gcb=gitCleanupBranch
 alias amr=applicationManagerBranchReplace
 alias vi='vim'
 
-alias composer='php -d memory_limit=-1 /usr/local/bin/composer'
+alias composer='php -d memory_limit=-1 ./composer.phar'
