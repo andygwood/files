@@ -4,3 +4,4 @@ ignore = Name cache
 ignore = Name logs
 ignore = Name .log
 ignore = Name .idea
+ignore = Name node_modules/

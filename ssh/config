@@ -8,3 +8,7 @@ host 52.228.0.186 wpwww
   User experiencepoint
   Hostname 52.228.0.186
   Port 22
+host afphost.expt.ca creative
+  User wood
+  Hostname afphost.expt.ca
+  Port 22

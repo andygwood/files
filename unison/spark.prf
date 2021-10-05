@@ -1,0 +1,9 @@
+root = /Users/andreww/PhpstormProjects/spark
+root = ssh://wood@agwdev72.dev.experiencepoint.vpn/spark/
+ignore = Name cache
+ignore = Name logs
+ignore = Name .log
+ignore = Name build
+ignore = Name .idea
+ignore = Name vendor/friends-of-behat/page-object-extension/.git/
+ignore = Name .git/
