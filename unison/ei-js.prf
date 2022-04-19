@@ -1,0 +1,7 @@
+root = /Users/andreww/PhpstormProjects/ei-js
+root = ssh://wood@agwdev72.dev.experiencepoint.vpn/dev/ei-js/
+ignore = Name cache
+ignore = Name logs
+ignore = Name .log
+ignore = Name build
+ignore = Name .idea

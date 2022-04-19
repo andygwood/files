@@ -5,4 +5,6 @@ ignore = Name logs
 ignore = Name .log
 ignore = Name build
 ignore = Name .idea
-ignore = Name vendor
+#ignore = Name vendor
+ignore = Name node_modules
+ignore = Name .git

@@ -5,3 +5,4 @@ ignore = Name logs
 ignore = Name .log
 ignore = Name build
 ignore = Name .idea
+ignore = Name .git
