@@ -1,0 +1,10 @@
+root = /Users/andreww/PhpstormProjects/learn-virtual
+root = ssh://wood@agwdev21q4.dev.experiencepoint.vpn/learn-virtual/
+ignore = Name cache
+ignore = Name logs
+ignore = Name .log
+ignore = Name build
+ignore = Name .idea
+ignore = Name vendor
+ignore = Name node_modules
+ignore = Name .git

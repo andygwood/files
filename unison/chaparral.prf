@@ -1,5 +1,5 @@
-root = /Users/wood/PhpstormProjects/chaparral
-root = ssh://agwdev72.dev.experiencepoint.vpn/chaparral/
+root = /Users/andreww/PhpstormProjects/chaparral
+root = ssh://wood@agwdev72.dev.experiencepoint.vpn/chaparral/
 ignore = Name cache
 ignore = Name logs
 ignore = Name .log

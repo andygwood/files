@@ -1,0 +1,8 @@
+root = /Users/andreww/PhpstormProjects/application-manager
+root = ssh://wood@agwdev21q4.dev.experiencepoint.vpn/application-manager
+ignore = Name cache
+ignore = Name logs
+ignore = Name .log
+ignore = Name .idea
+ignore = Name vendor
+ignore = Name .git

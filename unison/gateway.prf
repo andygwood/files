@@ -3,6 +3,5 @@ root = ssh://wood@agwdev72.dev.experiencepoint.vpn/gateway/
 ignore = Name cache
 ignore = Name logs
 ignore = Name .log
-ignore = Name build
 ignore = Name .idea
 ignore = Name .git

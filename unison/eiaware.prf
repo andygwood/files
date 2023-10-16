@@ -1,4 +1,4 @@
-root = /Users/andreww/PhpstormProjects/eiaware
+root = /Users/andreww/PhpstormProjects/eiaware-backend
 root = ssh://wood@agwdev72.dev.experiencepoint.vpn/eiaware/
 ignore = Name cache
 ignore = Name logs

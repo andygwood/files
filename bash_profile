@@ -2,6 +2,12 @@ export PATH="$PATH:$HOME/.composer/vendor/bin"
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 
+function sshConnectToTeam(){
+  ssh wood@$1dev72.dev.expt.ca
+}
+
+alias ssht='sshConnectToTeam'
+
 function jail(){
 
   umount -f agwdev54.dev.experiencepoint.vpn:/var/www/sites/
@@ -65,8 +71,8 @@ export TERM='xterm-256color'
 #
 # Aliases
 #
-alias rssh='ssh wood@agwdev54.dev.experiencepoint.vpn'
 alias rssh72='ssh wood@agwdev72.dev.experiencepoint.vpn'
+alias rssh='ssh wood@agwdev21q4.dev.experiencepoint.vpn'
 
 alias ll='ls -GhlF'                                                            # Color + Human readable + long + metadata
 alias la='ll -A'                                                               # same that above + every files

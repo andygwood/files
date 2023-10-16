@@ -1,0 +1,10 @@
+root = /Users/andreww/PhpstormProjects/bookaworkshopfrontend
+root = ssh://wood@agwdev21q4.dev.experiencepoint.vpn/bookaworkshopfrontend/
+ignore = Name cache
+ignore = Name logs
+ignore = Name .log
+ignore = Name build
+ignore = Name .idea
+ignore = Name vendor
+ignore = Name .git
+ignore = Name node_modules

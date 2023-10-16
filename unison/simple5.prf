@@ -1,0 +1,14 @@
+root = /Users/andreww/PhpstormProjects/simple5
+root = ssh://wood@agwdev21q4.dev.experiencepoint.vpn/simple/
+ignore = Name cache
+ignore = Name logs
+ignore = Name .log
+ignore = Name build
+ignore = Name .idea
+#ignore = Name vendor
+ignore = Name node_modules
+ignore = Name .git
+ignore = Name src/sf2
+ignore = Name src/components
+ignore = Name src/legacy
+ignore = Name src/frontend

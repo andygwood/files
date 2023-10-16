@@ -1,6 +1,0 @@
-root = /Users/andreww/PhpstormProjects/architecture
-root = ssh://wood@agwdev72.dev.experiencepoint.vpn/dev/architecture/
-ignore = Name cache
-ignore = Name logs
-ignore = Name .log
-ignore = Name .idea
