@@ -68,6 +68,10 @@ function sshTunnel(){
 
 export TERM='xterm-256color'
 
+source /usr/local/share/git-core/contrib/completion/git-prompt.sh
+source /usr/local/share/git-core/contrib/completion/git-completion.bash
+export PS1='\[\e[01;30m\]\u@\h\[\e[00m\]:\[\e[00;36m\]\w\[\e[00m\]$(__git_ps1 " (%s)")\$ ' # nice prompt
+
 #
 # Aliases
 #
