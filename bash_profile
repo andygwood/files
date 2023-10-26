@@ -51,14 +51,14 @@ function jail72(){
 function jailWatch(){
  for var in "$@"
  do
-     ~/Applications/Unison.app/Contents/MacOS/Unison -ui text -batch -repeat watch $var
+     unison -ui text -batch -repeat watch $var
  done
 }
 
 function jailSync(){
  for var in "$@"
  do
-     ~/Applications/Unison.app/Contents/MacOS/Unison -ui text -batch $var
+     unison -ui text -batch $var
  done
 }
 
@@ -77,6 +77,7 @@ export PS1='\[\e[01;30m\]\u@\h\[\e[00m\]:\[\e[00;36m\]\w\[\e[00m\]$(__git_ps1 " 
 #
 alias rssh72='ssh wood@agwdev72.dev.experiencepoint.vpn'
 alias rssh='ssh wood@agwdev21q4.dev.experiencepoint.vpn'
+alias rssh23='ssh wood@agwdev23q4.dev.expt.ca'
 
 alias ll='ls -GhlF'                                                            # Color + Human readable + long + metadata
 alias la='ll -A'                                                               # same that above + every files
@@ -84,5 +85,5 @@ alias la='ll -A'                                                               #
 alias vi='vim'                                                                 # You never want to use vi
 alias gl='git log --oneline --abbrev-commit --all --graph --decorate --color'
 alias g='git'                                                                  # because I'm always type "gti"
-source ${DIR}/aliases.sh
+source ~/PhpstormProjects/files/aliases.sh
 alias composer='~/.brew/sbin/composer'
