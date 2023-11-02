@@ -1,0 +1,96 @@
+export PATH="$PATH:$HOME/.composer/vendor/bin"
+
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
+
+function sshConnectToTeam(){
+  ssh wood@$1dev72.dev.expt.ca
+}
+
+alias ssht='sshConnectToTeam'
+
+function jail(){
+
+  umount -f agwdev54.dev.experiencepoint.vpn:/var/www/sites/
+
+  if  ! echo "$APPS" | grep -q "$1"; then
+      echo "Application can only be one of the following: $APPS"
+      return
+  fi
+
+  if [[ ! $PWD == '/Users/$(whoami)/Projects' ]]; then
+      cd "/Users/$(whoami)/Projects"
+  fi
+
+  if [[ ! -d "./$1" ]]; then
+      mkdir "./$1"
+  fi
+
+  sshfs "agwdev54.dev.experiencepoint.vpn:/var/www/sites/$1" "./$1"
+}
+
+function jail72(){
+
+  umount -f agwdev72.dev.experiencepoint.vpn:/var/www/sites/
+
+  if  ! echo "$APPS" | grep -q "$1"; then
+      echo "Application can only be one of the following: $APPS"
+      return
+  fi
+
+  if [[ ! $PWD == '/Users/$(whoami)/Projects72' ]]; then
+      cd "/Users/$(whoami)/Projects72"
+  fi
+
+  if [[ ! -d "./$1" ]]; then
+      mkdir "./$1"
+  fi
+
+  sshfs "agwdev72.dev.experiencepoint.vpn:/var/www/sites/$1" "./$1"
+}
+
+function jailWatch(){
+ for var in "$@"
+ do
+     unison -ui text -batch -repeat watch $var
+ done
+}
+
+function jailSync(){
+ for var in "$@"
+ do
+     unison -ui text -batch $var
+ done
+}
+
+function sshTunnel(){
+ ssh -N -L localhost:8080:localhost:8080 wood@agwdev72.dev.experiencepoint.vpn
+}
+
+export TERM='xterm-256color'
+
+function parse_git_branch() {
+    git branch 2> /dev/null | sed -n -e 's/^\* \(.*\)/[\1]/p'
+}
+
+COLOR_DEF=$'%f'
+COLOR_USR=$'%F{243}'
+COLOR_DIR=$'%F{197}'
+COLOR_GIT=$'%F{39}'
+setopt PROMPT_SUBST
+export PROMPT='${COLOR_USR}%n ${COLOR_DIR}%~ ${COLOR_GIT}$(parse_git_branch)${COLOR_DEF} $ '
+
+#
+# Aliases
+#
+alias rssh72='ssh wood@agwdev72.dev.experiencepoint.vpn'
+alias rssh='ssh wood@agwdev21q4.dev.experiencepoint.vpn'
+alias rssh23='ssh wood@agwdev23q4.dev.expt.ca'
+
+alias ll='ls -GhlF'                                                            # Color + Human readable + long + metadata
+alias la='ll -A'                                                               # same that above + every files
+
+alias vi='vim'                                                                 # You never want to use vi
+alias gl='git log --oneline --abbrev-commit --all --graph --decorate --color'
+alias g='git'                                                                  # because I'm always type "gti"
+source ~/PhpstormProjects/files/aliases.sh
+alias composer='~/.brew/sbin/composer'
