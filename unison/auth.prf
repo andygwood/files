@@ -1,4 +1,4 @@
-root = /Users/andreww/PhpstormProjects/auth
+root = /Users/wood/PhpstormProjects/auth
 root = ssh://wood@agwdev72.dev.experiencepoint.vpn/auth/
 ignore = Name cache
 ignore = Name logs

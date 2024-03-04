@@ -48,14 +48,14 @@ function jail72(){
   sshfs "agwdev72.dev.experiencepoint.vpn:/var/www/sites/$1" "./$1"
 }
 
-function jailWatch(){
+function jwatch(){
  for var in "$@"
  do
      unison -ui text -batch -repeat watch $var
  done
 }
 
-function jailSync(){
+function jsync(){
  for var in "$@"
  do
      unison -ui text -batch $var

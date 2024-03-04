@@ -1,5 +1,5 @@
 root = /Users/wood/PhpstormProjects/workshops
-root = ssh://wood@agwdev21q4.dev.experiencepoint.vpn/workshops/
+root = ssh://wood@agwdev23q4.dev.experiencepoint.vpn/workshops/
 ignore = Name cache
 ignore = Name logs
 ignore = Name .log

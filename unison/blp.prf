@@ -1,5 +1,5 @@
-root = /Users/andreww/PhpstormProjects/badging-landing-page
-root = ssh://wood@agwdev21q4.dev.experiencepoint.vpn/dev/badging-landing-page/v0.0.0
+root = /Users/wood/PhpstormProjects/badging-landing-page
+root = ssh://wood@agwdev23q4.dev.experiencepoint.vpn/dev/badging-landing-page/v0.0.0
 ignore = Name cache
 ignore = Name logs
 ignore = Name .log

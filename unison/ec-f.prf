@@ -1,0 +1,8 @@
+root = /Users/wood/PhpstormProjects/ec-frontend
+root = ssh://wood@agwdev72.dev.experiencepoint.vpn/dev/ec-js-frontend/
+ignore = Name cache
+ignore = Name logs
+ignore = Name .log
+ignore = Name build
+ignore = Name .idea
+ignore = Name .git

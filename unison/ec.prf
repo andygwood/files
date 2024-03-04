@@ -1,4 +1,4 @@
-root = /Users/andreww/PhpstormProjects/ec
+root = /Users/wood/PhpstormProjects/ec
 root = ssh://wood@agwdev72.dev.experiencepoint.vpn/ec/
 ignore = Name cache
 ignore = Name logs
@@ -6,3 +6,4 @@ ignore = Name .log
 ignore = Name build
 ignore = Name .idea
 ignore = Name .git
+ignore = Name vendor
