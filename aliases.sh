@@ -103,6 +103,7 @@ alias gpp='g push'
 alias gc='g commit'
 alias gl='git log --oneline --abbrev-commit --all --graph --decorate --color'
 alias gld='git log --decorate'
+alias gppa='git add . && git commit --amend --no-edit && git push --force'
 alias gcb=gitCleanupBranch
 alias amr=applicationManagerBranchReplace
 alias vi='vim'
