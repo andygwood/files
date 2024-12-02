@@ -109,3 +109,7 @@ alias amr=applicationManagerBranchReplace
 alias vi='vim'
 
 alias composer='php -d memory_limit=-1 ./composer.phar'
+
+source /etc/bash_completion.d/git-prompt
+source /usr/share/bash-completion/completions/git
+export PS1='\[\e[01;30m\]\u@\h\[\e[00m\]:\[\e[00;36m\]\w\[\e[00m\]$(__git_ps1 " (%s)")\$ '
