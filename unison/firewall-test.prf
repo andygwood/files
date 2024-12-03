@@ -1,0 +1,9 @@
+root = /Users/wood/PhpstormProjects/firewall-test
+root = ssh://wood@agwdev72.dev.experiencepoint.vpn/dev/ei-aware-techtest-app/
+ignore = Name cache
+ignore = Name logs
+ignore = Name .log
+ignore = Name build
+ignore = Name .idea
+ignore = Name .git
+#ignore = Name vendor

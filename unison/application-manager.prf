@@ -1,5 +1,5 @@
-root = /Users/andreww/PhpstormProjects/application-manager
-root = ssh://wood@agwdev21q4.dev.experiencepoint.vpn/application-manager
+root = /Users/wood/PhpstormProjects/application-manager
+root = ssh://wood@agwdev23q4.dev.experiencepoint.vpn/application-manager
 ignore = Name cache
 ignore = Name logs
 ignore = Name .log

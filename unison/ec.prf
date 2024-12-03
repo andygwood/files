@@ -6,4 +6,5 @@ ignore = Name .log
 ignore = Name build
 ignore = Name .idea
 ignore = Name .git
-ignore = Name vendor
+#ignore = Name vendor
+ignore = Name data/js-frontend/vendor
